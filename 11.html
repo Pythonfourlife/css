@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout Example</title>
+    <script>
+        function displayCurrentTime() {
+            var currentTime = new Date().toLocaleTimeString();
+            document.write("Current Time: " + currentTime);
+        }
+
+        setInterval(displayCurrentTime, 1000);
+    </script>
+</head>
+
+<body>
+    <p>Wait for a moment, and the current time will be displayed after 3 seconds.</p>
+</body>
+
+</html>

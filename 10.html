@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <script>
+        var win = window.open("", "WINBRO", "width=500,height=300");
+        win.document.write("<p>This is 'WINBRO'</p>");
+        var result = win.prompt("Enter option 'scroll' or 'move' ");
+
+        if (result == "scroll") {
+            win.scrollBy(0, 400);
+            win.document.write("Window Scrolled");
+        } else if (result == "move") {
+            win.moveTo(500, 100);
+            win.document.write("Window Moved");
+        } else {
+            win.document.write("Invalid option entered");
+        }
+    </script>
+
+</body>
+
+</html>
