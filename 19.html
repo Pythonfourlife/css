@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Banner Ads</title>
+    <script language="Javascript" type="text/javascript">
+        pics = new Array('0.png', '1.png', '2.png')
+        count = 0;
+        function SlideShow(status) {
+            if (document.images) {
+                count = count + status;
+                if (count > (pics.length - 1)) {
+                    count = 0
+                }
+                if (count < 0) {
+                    count = pics.length - 1;
+                }
+                document.img1.src = pics[count];
+            }
+        } 
+    </script>
+</head>
+
+<body>
+    <img src="0.png" width="300" alt="" height="300" name="img1" />
+    <br>
+    <input type="button" value="Next" onclick="SlideShow(1)">
+    <input type="button" value="Back" onclick="SlideShow(-1)">
+</body>
+
+</html>
